@@ -107,6 +107,8 @@ public class createCandidate extends basePage_HRMS {
 		wait.until(ExpectedConditions.elementToBeClickable(save)).click();
 
 		System.out.println("Candidate form Submitted successfully");
+		
+		
 
 	}
 
