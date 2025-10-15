@@ -13,7 +13,7 @@ public class createCandidate extends basePage_HRMS {
 
 	public createCandidate(WebDriver driver) {
 		super(driver);
-		
+
 	}
 
 	// Locator
@@ -38,8 +38,8 @@ public class createCandidate extends basePage_HRMS {
 	@FindBy(xpath = "//input[@placeholder='Last Name']")
 	WebElement L_Name;
 
-//	@FindBy(xpath = "///div[@class='oxd-select-text oxd-select-text--active']")
-//	WebElement vac_DD;
+	// @FindBy(xpath = "///div[@class='oxd-select-text oxd-select-text--active']")
+	// WebElement vac_DD;
 
 	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/div[1]/div[2]/input[1]")
 	WebElement email;
@@ -99,16 +99,13 @@ public class createCandidate extends basePage_HRMS {
 
 	}
 
-
-
 	public void submit() {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(save)).click();
 
 		System.out.println("Candidate form Submitted successfully");
-		
-		
+		System.out.println("Candidate Register successfuly");
 
 	}
 
