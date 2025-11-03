@@ -60,7 +60,8 @@ public class Add_candidate extends baseClass_OrangeHRMS {
 		logger.info("Open and verify candidate page");
 		Add_cand.verify_candidate_page();
 		logger.info("input candidate detail in registration page ....");
-		Add_cand.cand_data_input("Valmiki","Kumar","Srivastava","priyansh@gmail.com","9616762782","This is for test the script for candidate creation page ");
+		Add_cand.cand_data_input("Priyanshu","Kumar","Singh","priyansh@gmail.com","9616762782","This is for test the script for candidate creation page ");
+		Thread.sleep(8000);
 		Add_cand.submit();
 
 

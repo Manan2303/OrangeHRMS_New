@@ -104,7 +104,8 @@ public class createCandidate extends basePage_HRMS {
 	}
 
 	public void submit() {
-
+		
+		save.click();
 		System.out.println("Candidate form Submitted successfully");
 		System.out.println("Candidate Register successfuly");
 
